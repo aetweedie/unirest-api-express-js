@@ -30,6 +30,8 @@ app.use('/users', users);
 app.get('/books', function(req, res) {
   unirest.get('http://api.nytimes.com/svc/books/v3/lists/hardcover-fiction.json?api-key=' + process.env.NYT_API_KEY)
     .end(function (response) {
+      var NYTbooks = response.body.results.books;
+      res.render('index', {books: NYTbooks});
     console.log(response.body);
   });
 });
