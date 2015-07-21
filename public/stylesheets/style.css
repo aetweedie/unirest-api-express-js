@@ -1,6 +1,23 @@
+*, *:before, *:after {
+box-sizing: border-box;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.book {
+  display: inline-block;
+  width: 50%;
+  color: white;
+  height: 200px;
+  padding-left: 30px;
+  float: left;
+}
+
+h2 {
+  background-color: rgba(0, 0, 0, .5)
 }
 
 a {

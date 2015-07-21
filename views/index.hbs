@@ -1,5 +1,8 @@
-<h1>The NYT best seller list</h1>
 {{#books}}
-<h2>{{title}}</h2>
-<img src="{{book_image}}" alt="" />
+  <article class="book" style="background: url('{{book_image}}') no-repeat; background-size: cover; background-color: black;">
+    <h2>{{title}}</h2>
+    <p>
+      <h3>by {{author}}</h3>
+    </p>
+  </article>
 {{/books}}
